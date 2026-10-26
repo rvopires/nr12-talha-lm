@@ -1,0 +1,297 @@
+{
+  "generatedAt": "2026-10-26T14:28:10.498Z",
+  "items": {
+    "m1-cover": {
+      "file": "assets/audio/m1-cover.mp3",
+      "text": "Módulo 1, Introdução e referências normativas. A origem da NR 11, as normas e referências citadas no treinamento e o checklist como ferramenta de apoio. Na imagem: Capa do Módulo 1: Introdução e referências normativas."
+    },
+    "m1-v-abertura": {
+      "file": "assets/audio/m1-v-abertura.mp3",
+      "text": "Vídeo. Abertura: a NR 11 e a segurança com equipamentos de içar."
+    },
+    "m1-referencias-nrs": {
+      "file": "assets/audio/m1-referencias-nrs.mp3",
+      "text": "Referências normativas: as NRs."
+    },
+    "m1-referencias-abnt": {
+      "file": "assets/audio/m1-referencias-abnt.mp3",
+      "text": "Referências normativas: ABNT e outras."
+    },
+    "m1-porque": {
+      "file": "assets/audio/m1-porque.mp3",
+      "text": "Por que existe a NR 11 e o checklist. Nasceu para a segurança: Implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. Ferramenta de apoio: Ótima ferramenta para atividades de longa duração. Por que os acidentes eram frequentes: Devido à crescente mecanização industrial e à grande necessidade de movimentações mais eficientes nos ambientes de trabalho."
+    },
+    "m1-quiz-intro": {
+      "file": "assets/audio/m1-quiz-intro.mp3",
+      "text": "Desafio, NR 11 em foco. 4 perguntas cronometradas sobre a origem da NR 11 e as referências. Mínimo de 3 acertos para avançar."
+    },
+    "m1-q1": {
+      "file": "assets/audio/m1-q1.mp3",
+      "text": "Segundo o treinamento, por que a NR 11 nasceu? Opção 1: Para criar novas máquinas de içamento. Opção 2: Para definir o salário dos operadores. Opção 3: Para implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. Na imagem: Ilustração neutra: depósito limpo e vazio, com paletes ao fundo."
+    },
+    "m1-q2": {
+      "file": "assets/audio/m1-q2.mp3",
+      "text": "O que tornava os acidentes frequentes, antes da NR 11? Opção 1: A crescente mecanização industrial e a grande necessidade de movimentações mais eficientes. Opção 2: A falta de luz nos depósitos. Opção 3: O uso excessivo de EPIs. Na imagem: Ilustração neutra: pátio de carga e descarga com empilhadeiras e esteiras paradas."
+    },
+    "m1-q3": {
+      "file": "assets/audio/m1-q3.mp3",
+      "text": "Qual norma trata do Equipamento de Proteção Individual – EPI? Opção 1: NR 17. Opção 2: NR 06. Opção 3: NR 35. Na imagem: Ilustração neutra: mesa de segurança do trabalho com pastas fechadas e um capacete."
+    },
+    "m1-q4": {
+      "file": "assets/audio/m1-q4.mp3",
+      "text": "Segundo o treinamento, qual ferramenta ajuda a não esquecer ou deixar passar uma obrigação em atividades de longa duração? Opção 1: Um cronômetro. Opção 2: Um rádio comunicador. Opção 3: O checklist. Na imagem: Ilustração neutra: bancada com uma prancheta, um capacete e uma caneta."
+    },
+    "m1-result-pass": {
+      "file": "assets/audio/m1-result-pass.mp3",
+      "text": "Módulo 1 concluído. Título conquistado. BASE DA NR 11. Você conhece a origem da NR 11 e as normas de referência."
+    },
+    "m1-result-fail": {
+      "file": "assets/audio/m1-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "home": {
+      "file": "assets/audio/home.mp3",
+      "text": "Abertura do treinamento. Segurança do trabalho. NR 11, Operador de talha elétrica. Aprenda a operar a talha elétrica com segurança, seguindo a NR 11. São cinco módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, instrutor da TecnoCursos ao lado de uma estante de EPIs. Na imagem: logo TecnoCursos."
+    },
+    "menu-1": {
+      "file": "assets/audio/menu-1.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Módulo 1 de 5 liberado."
+    },
+    "menu-2": {
+      "file": "assets/audio/menu-2.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Módulo 2 de 5 liberado."
+    },
+    "menu-3": {
+      "file": "assets/audio/menu-3.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Módulo 3 de 5 liberado."
+    },
+    "menu-4": {
+      "file": "assets/audio/menu-4.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Módulo 4 de 5 liberado."
+    },
+    "menu-5": {
+      "file": "assets/audio/menu-5.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Módulo 5 de 5 liberado."
+    },
+    "menu-done": {
+      "file": "assets/audio/menu-done.mp3",
+      "text": "NR 11, Operador de talha elétrica. Conteúdo programático completo. Módulo 1, Introdução e referências normativas. Módulo 2, A talha elétrica e os EPIs. Módulo 3, O que fazer e o que não fazer. Módulo 4, Inspeção de corrente e gancho. Módulo 5, Big Bag e passos da operação. Treinamento concluído. Você finalizou todos os módulos."
+    },
+    "m2-result-pass": {
+      "file": "assets/audio/m2-result-pass.mp3",
+      "text": "Módulo 2 concluído. Título conquistado. TALHA CONHECIDA. Você sabe o que a talha elétrica precisa ter e quais EPIs usar."
+    },
+    "m2-result-fail": {
+      "file": "assets/audio/m2-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m3-result-pass": {
+      "file": "assets/audio/m3-result-pass.mp3",
+      "text": "Módulo 3 concluído. Título conquistado. OPERADOR ATENTO. Você sabe o que fazer e o que evitar ao operar a talha."
+    },
+    "m3-result-fail": {
+      "file": "assets/audio/m3-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m4-result-pass": {
+      "file": "assets/audio/m4-result-pass.mp3",
+      "text": "Módulo 4 concluído. Título conquistado. INSPETOR DE TALHA. Você sabe inspecionar a corrente e o gancho da talha."
+    },
+    "m4-result-fail": {
+      "file": "assets/audio/m4-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m5-result-pass": {
+      "file": "assets/audio/m5-result-pass.mp3",
+      "text": "Módulo 5 concluído. Título conquistado. OPERADOR SEGURO. Você sabe içar um Big Bag e os passos e cuidados da operação."
+    },
+    "m5-result-fail": {
+      "file": "assets/audio/m5-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m2-cover": {
+      "file": "assets/audio/m2-cover.mp3",
+      "text": "Módulo 2, A talha elétrica e os EPIs. O que a talha elétrica precisa ter para operar com segurança e os EPIs do operador. Na imagem: Capa do Módulo 2: A talha elétrica e os EPIs."
+    },
+    "m2-v-comando": {
+      "file": "assets/audio/m2-v-comando.mp3",
+      "text": "Vídeo. Requisitos da talha elétrica: comando, cabo e aterramento."
+    },
+    "m2-comando": {
+      "file": "assets/audio/m2-comando.mp3",
+      "text": "Comando, cabo e aterramento. Botão de subida: Deve exigir permanente pressão para levantar ou abaixar a carga. Na imagem: Botoeira com o polegar pressionando um botão. Cabo da caixa de comando: Deve ser sustentado por um cabo ou corrente paralela, que o protege de esforços e danificações. Na imagem: Cabo da botoeira sustentado por corrente paralela. Aterramento: A talha deve ser aterrada, para evitar choque elétrico no operador em caso de falha do circuito. Na imagem: Corpo da talha com cabo de aterramento. Duas voltas de cabo: Um mínimo de duas voltas de cabo deve permanecer no tambor quando o bloco do gancho estiver no piso mais baixo do edifício onde a talha opera. Na imagem: Tambor da talha com voltas de cabo de aço."
+    },
+    "m2-v-fixacao": {
+      "file": "assets/audio/m2-v-fixacao.mp3",
+      "text": "Vídeo. Requisitos da talha elétrica: capacidade, fixação e limites."
+    },
+    "m2-fixacao-1": {
+      "file": "assets/audio/m2-fixacao-1.mp3",
+      "text": "Capacidade, fixação e limites."
+    },
+    "m2-fixacao-2": {
+      "file": "assets/audio/m2-fixacao-2.mp3",
+      "text": "Tambor, condições de uso e cuidados."
+    },
+    "m2-v-epis": {
+      "file": "assets/audio/m2-v-epis.mp3",
+      "text": "Vídeo. EPIs do operador."
+    },
+    "m2-epis": {
+      "file": "assets/audio/m2-epis.mp3",
+      "text": "EPIs do operador."
+    },
+    "m2-quiz-intro": {
+      "file": "assets/audio/m2-quiz-intro.mp3",
+      "text": "Desafio, Par perfeito. Ligue cada requisito da talha ao que a norma pede. Mínimo de 1 acerto para avançar."
+    },
+    "m2-match": {
+      "file": "assets/audio/m2-match.mp3",
+      "text": "Ligue o requisito ao que a talha deve ter. Toque em um requisito e depois no que o treinamento diz sobre ele."
+    },
+    "m3-cover": {
+      "file": "assets/audio/m3-cover.mp3",
+      "text": "Módulo 3, O que fazer e o que não fazer. Ato inseguro e condição insegura, os comportamentos certos, o uso incorreto, a sobrecarga, o foco no trabalho e a carona na carga. Na imagem: Capa do Módulo 3: O que fazer e o que não fazer."
+    },
+    "m3-v-ato": {
+      "file": "assets/audio/m3-v-ato.mp3",
+      "text": "Vídeo. Ato inseguro, condição insegura e o que fazer."
+    },
+    "m3-ato": {
+      "file": "assets/audio/m3-ato.mp3",
+      "text": "Na imagem: Ato inseguro, condição insegura e os dois juntos: um trabalhador em cima de uma cadeira, um piso molhado com fio solto e uma trabalhadora distraída perto da poça."
+    },
+    "m3-sequencia": {
+      "file": "assets/audio/m3-sequencia.mp3",
+      "text": "A sequência do acidente. Personalidade: Início da sequência. Falhas humanas: Vem depois da personalidade. Atos e condições inseguras: Vêm depois das falhas humanas. Acidente: Vem depois dos atos e condições inseguras. Lesão: Fim da sequência."
+    },
+    "m3-faca": {
+      "file": "assets/audio/m3-faca.mp3",
+      "text": "O que fazer. Inspecione antes de usar: Sempre inspecione as talhas antes de usar. Na imagem: Operador com uma lupa examinando a corrente da talha. Talha certa para o peso certo: Verificação de capacidade de içamento suportada. Na imagem: Operador olhando a placa de capacidade da talha. Ninguém sob a carga: Assegure-se de que não haja ninguém sob a carga. Na imagem: Operador conferindo que o espaço sob a carga está livre. Suba e desça devagar: Suba e desça a carga bem devagar. Na imagem: Operador elevando devagar uma carga."
+    },
+    "m3-v-incorreto": {
+      "file": "assets/audio/m3-v-incorreto.mp3",
+      "text": "Vídeo. Uso incorreto e sobrecarga."
+    },
+    "m3-incorreto": {
+      "file": "assets/audio/m3-incorreto.mp3",
+      "text": "Não use incorretamente."
+    },
+    "m3-sobrecarga": {
+      "file": "assets/audio/m3-sobrecarga.mp3",
+      "text": "Não sobrecarregue a talha."
+    },
+    "m3-v-foco": {
+      "file": "assets/audio/m3-v-foco.mp3",
+      "text": "Vídeo. Foco no trabalho e carona na carga."
+    },
+    "m3-foco": {
+      "file": "assets/audio/m3-foco.mp3",
+      "text": "Foco no trabalho. Não brinque nem se distraia: Quando trabalhar com talhas e pontes rolantes. Proibido perder o foco. Não pegue carona com a carga: Nunca suba na carga. Evite sonhar acordado: Durante o trabalho, mantenha a atenção na operação."
+    },
+    "m3-quiz-intro": {
+      "file": "assets/audio/m3-quiz-intro.mp3",
+      "text": "Desafio, Faça ou evite. Classifique cada atitude: é o que se deve fazer ou o que não se deve fazer com a talha. Mínimo de 1 acerto para avançar."
+    },
+    "m3-sort": {
+      "file": "assets/audio/m3-sort.mp3",
+      "text": "Faça ou não faça?. Um cartão por vez: escolha o grupo certo."
+    },
+    "m4-cover": {
+      "file": "assets/audio/m4-cover.mp3",
+      "text": "Módulo 4, Inspeção de corrente e gancho. Como inspecionar a corrente (sinais de uso, deformação e sinais de perigo) e o gancho (uso, desgaste central, alongamento e o limite de 15 %). Na imagem: Capa do Módulo 4: Inspeção de corrente e gancho."
+    },
+    "m4-v-corrente": {
+      "file": "assets/audio/m4-v-corrente.mp3",
+      "text": "Vídeo. Inspeção da corrente."
+    },
+    "m4-corrente": {
+      "file": "assets/audio/m4-corrente.mp3",
+      "text": "Sinais na corrente."
+    },
+    "m4-v-gancho": {
+      "file": "assets/audio/m4-v-gancho.mp3",
+      "text": "Vídeo. Uso e inspeção do gancho."
+    },
+    "m4-gancho": {
+      "file": "assets/audio/m4-gancho.mp3",
+      "text": "Uso e inspeção do gancho. Uso do gancho: Observe a diferença entre o uso incorreto e o uso correto do gancho. Na imagem: Gancho de aço de talha com trava de segurança. Desgaste central: Na inspeção do gancho, observe o desgaste central. Na imagem: Gancho com marcas de desgaste na região central. Alongamento: Na inspeção do gancho, observe também o alongamento. Na imagem: Gancho com o bico esticado. Até 15 %: Até 15 % de alargamento do gancho é aceitável. Na imagem: Cartaz: até 15 % de alargamento do gancho é aceitável."
+    },
+    "m4-quiz-intro": {
+      "file": "assets/audio/m4-quiz-intro.mp3",
+      "text": "Desafio, Complete a inspeção. Complete cada frase com a palavra certa sobre a inspeção da corrente e do gancho. Mínimo de 3 acertos para avançar."
+    },
+    "m4-fill-1": {
+      "file": "assets/audio/m4-fill-1.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher a lacuna."
+    },
+    "m4-fill-2": {
+      "file": "assets/audio/m4-fill-2.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher a lacuna."
+    },
+    "m4-fill-3": {
+      "file": "assets/audio/m4-fill-3.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher as lacunas, na ordem."
+    },
+    "m4-fill-4": {
+      "file": "assets/audio/m4-fill-4.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher a lacuna."
+    },
+    "m5-cover": {
+      "file": "assets/audio/m5-cover.mp3",
+      "text": "Módulo 5, Big Bag e passos da operação. O içamento de Big Bag com balancim e alças íntegras e os passos e cuidados da operação. Na imagem: Capa do Módulo 5: Big Bag e passos da operação."
+    },
+    "m5-v-bigbag": {
+      "file": "assets/audio/m5-v-bigbag.mp3",
+      "text": "Vídeo. Içamento de Big Bag."
+    },
+    "m5-bigbag": {
+      "file": "assets/audio/m5-bigbag.mp3",
+      "text": "Big Bag e balancim. Ancorado no balancim: Os Big Bags são ancorados nos balancins. Perfeito ajuste das alças: Observar o perfeito ajuste das alças. Integridade das alças: A constatação de integridade das alças é de suma importância."
+    },
+    "m5-v-passos": {
+      "file": "assets/audio/m5-v-passos.mp3",
+      "text": "Vídeo. Passos da operação e o percurso da manobra."
+    },
+    "m5-passos": {
+      "file": "assets/audio/m5-passos.mp3",
+      "text": "Passos a serem seguidos. Ambientar-se: Ambiente-se no local de trabalho. Controles direcionais: Verificar os controles direcionais da talha. Características: Observar as características da talha."
+    },
+    "m5-antes": {
+      "file": "assets/audio/m5-antes.mp3",
+      "text": "Antes de manobrar. Reflita sobre o percurso: Reflita sobre o percurso necessário para a manobra. Na imagem: Operador olhando o trajeto livre à frente. Sem obstáculos de enrosco: Certifique-se que não haja obstáculos “enrosco”. Na imagem: Operador conferindo o caminho da carga. Proximidade de pessoas: Observe a proximidade de pessoas. Na imagem: Operador atento a uma pessoa ao longe. Foco na operação: Foco na operação, sem distrações. Na imagem: Operador concentrado na carga."
+    },
+    "m5-quiz-intro": {
+      "file": "assets/audio/m5-quiz-intro.mp3",
+      "text": "Desafio, Duelo do içamento. Responda sim ou não a cada afirmação sobre o Big Bag e a operação. Mínimo de 5 acertos para avançar."
+    },
+    "m5-d1": {
+      "file": "assets/audio/m5-d1.mp3",
+      "text": "Os Big Bags são ancorados nos balancins. Opção 1: Sim. Opção 2: Não. Na imagem: Big Bag no balancim."
+    },
+    "m5-d2": {
+      "file": "assets/audio/m5-d2.mp3",
+      "text": "A integridade das alças do Big Bag é de suma importância. Opção 1: Sim. Opção 2: Não. Na imagem: Alças do Big Bag."
+    },
+    "m5-d3": {
+      "file": "assets/audio/m5-d3.mp3",
+      "text": "Antes de manobrar, é preciso refletir sobre o percurso necessário. Opção 1: Sim. Opção 2: Não. Na imagem: Percurso da manobra."
+    },
+    "m5-d4": {
+      "file": "assets/audio/m5-d4.mp3",
+      "text": "Pode manobrar sem se preocupar com a proximidade de pessoas. Opção 1: Sim. Opção 2: Não. Na imagem: Pessoas por perto."
+    },
+    "m5-d5": {
+      "file": "assets/audio/m5-d5.mp3",
+      "text": "Durante a operação, distrações são aceitáveis. Opção 1: Sim. Opção 2: Não. Na imagem: Foco na operação."
+    },
+    "m5-d6": {
+      "file": "assets/audio/m5-d6.mp3",
+      "text": "Não é necessário verificar os controles direcionais da talha. Opção 1: Sim. Opção 2: Não. Na imagem: Controles direcionais."
+    },
+    "m5-finale": {
+      "file": "assets/audio/m5-finale.mp3",
+      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 11 – Operador de talha elétrica. Pense antes de agir. Na imagem: Capa de parabéns, conclusão do treinamento."
+    }
+  }
+}

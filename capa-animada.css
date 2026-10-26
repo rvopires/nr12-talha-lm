@@ -1,0 +1,38 @@
+/* Capa animada — NR 11 Operador de talha elétrica.
+   Dois efeitos sobre a imagem de fundo (assets/fotos/capa-fundo.png, 1672×941):
+   1) o palete com gancho e corrente sobe e desce devagar (assets/fotos/capa-palete.png);
+   2) um balão de fala do instrutor, com frases que aparecem uma depois da outra.
+   Posições = % da imagem; a camada acompanha o mesmo enquadramento da foto (cover, alinhada à direita).
+   Para desfazer: remova o <link> deste arquivo e o <script> capa-animada.js do sessao-aprender.html. */
+.qs-fx { position: absolute; pointer-events: none; overflow: hidden; --u: 1px; }
+/* faixa de recorte logo abaixo do corpo da talha (y ≥ 15,4 % da imagem): a corrente some "dentro" da talha */
+.qs-fx-clip { position: absolute; left: 0; width: 100%; top: 15.41%; height: 84.59%; overflow: hidden; }
+.qs-fx-pal {
+  position: absolute; display: block; max-width: none; height: auto; user-select: none; -webkit-user-drag: none;
+  left: 56.2%; top: -6.53%; width: 17.94%;
+  animation: qsFxLift 6.5s ease-in-out infinite;
+}
+@keyframes qsFxLift {
+  0%, 100% { transform: translateY(0); }
+  45%, 55% { transform: translateY(calc(var(--u) * -38)); }
+}
+/* balão de fala: logo acima do capacete do instrutor (pés do balão a ~8 px da cabeça), com a ponta virada para ele */
+.qs-fx-say {
+  position: absolute; left: 84.6%; bottom: 59.6%; width: max-content; max-width: calc(var(--u) * 205);
+  padding: calc(var(--u) * 11) calc(var(--u) * 16);
+  background: #fff; color: #17333f; border: calc(var(--u) * 3) solid #34af77; border-radius: calc(var(--u) * 20);
+  font: 800 calc(var(--u) * 19)/1.25 "Montserrat", "Open Sans", sans-serif; text-align: center;
+  box-shadow: 0 calc(var(--u) * 8) calc(var(--u) * 22) rgba(8, 28, 36, .38);
+  opacity: 0; transform: translateY(calc(var(--u) * 8)) scale(.92); transform-origin: 8% 100%;
+  transition: opacity .35s ease, transform .45s cubic-bezier(.2, 1.4, .4, 1);
+}
+.qs-fx-say::after {
+  content: ''; position: absolute; left: calc(var(--u) * 12); bottom: calc(var(--u) * -10);
+  width: calc(var(--u) * 16); height: calc(var(--u) * 16); background: #fff;
+  border-right: calc(var(--u) * 3) solid #34af77; border-bottom: calc(var(--u) * 3) solid #34af77;
+  transform: rotate(45deg); border-bottom-right-radius: calc(var(--u) * 4);
+}
+.qs-fx-say.is-on { opacity: 1; transform: none; }
+.qs-fx-say span { display: inline-block; opacity: 0; transform: translateY(.35em); transition: opacity .3s ease, transform .35s ease; }
+.qs-fx-say.is-on span { opacity: 1; transform: none; transition-delay: calc(var(--i) * .1s); }
+@media (prefers-reduced-motion: reduce) { .qs-fx-pal { animation: none; } .qs-fx-say, .qs-fx-say span { transition: none; } }
