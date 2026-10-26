@@ -6,7 +6,7 @@
  *
  * Tipos: cover | content | video | quiz-intro | question | match | sort | fill | finale
  *
- * Vídeos: ainda sem embed/playerId (Panda). Preencher "embed" e "playerId" em cada tela type:"video".
+ * Vídeos Panda: passar o UUID como 7º argumento de video(...).
  * Fotos: assets/fotos/*.png (a gerar com os prompts do roteiro; sem a imagem, a tela mostra o ícone).
  * Nomes das fotos seguem o roteiro: pNN.k.png (NN = tela do roteiro, k = ordem) e mMpK.png (perguntas).
  *
@@ -19,14 +19,20 @@
  */
 (function () {
   var F = 'assets/fotos/';
+  var PANDA = 'https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=';
 
   function cover(m, title, subtitle) {
     return { id: 'm' + m + '-cover', type: 'cover', title: 'Módulo ' + m + ' — ' + title, subtitle: subtitle,
       transcript: 'Módulo ' + m + ': ' + title + '.', image: F + 'capamodulo' + m + '.png', imageAlt: 'Capa do Módulo ' + m + ': ' + title };
   }
-  function video(id, title, dur, scene, brief, body) {
-    return { id: id, type: 'video', kicker: '🎥 Vídeo', title: title, duration: dur, scene: scene, brief: brief, body: body,
+  function video(id, title, dur, scene, brief, body, pandaId) {
+    var out = { id: id, type: 'video', kicker: '🎥 Vídeo', title: title, duration: dur, scene: scene, brief: brief, body: body,
       transcript: 'Vídeo: ' + title + '.' };
+    if (pandaId) {
+      out.embed = PANDA + pandaId;
+      out.playerId = 'panda-' + pandaId;
+    }
+    return out;
   }
   function intro(m, title, count, min, icon, body) {
     return { id: 'm' + m + '-quiz-intro', type: 'quiz-intro', title: 'Desafio — ' + title, count: count, minCorrect: min, icon: icon,
@@ -65,7 +71,8 @@
           video('m1-v-abertura', 'Abertura: a NR 11 e a segurança com equipamentos de içar', '1:00',
             'Galpão com a talha elétrica em operação, movimentação de materiais, a lista do que o aluno vai ver e o checklist.',
             'Cinematográfico realista; cartaz para a lista do curso. Locução calma e direta.',
-            'A NR 11 nasceu para implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. O checklist é uma ótima ferramenta para atividades de longa duração.'),
+            'A NR 11 nasceu para implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. O checklist é uma ótima ferramenta para atividades de longa duração.',
+            'cebd6a74-6298-42e4-aa99-0266035ee092'),
           {
             "id": "m1-referencias-nrs", "type": "content", "layout": "acordeao", "startAt": 1, "nextLabel": "Próxima norma", "kicker": "📄 Texto", "title": "Referências normativas: as NRs",
             "help": "Toque numa faixa colorida, ou em Próxima norma, para abrir cada norma. Na última, clique em Concluir.",
@@ -129,7 +136,8 @@
           video('m2-v-comando', 'Requisitos da talha elétrica: comando, cabo e aterramento', '0:40',
             'Detalhes da talha elétrica: botoeira, cabo de comando, aterramento e tambor com as voltas de cabo.',
             'Cinematográfico realista de equipamento, detalhe por detalhe; sem personagem.',
-            'O botão de subida exige permanente pressão. O cabo da caixa de comando é sustentado por um cabo ou corrente paralela. A talha é aterrada e mantém duas voltas de cabo no tambor.'),
+            'O botão de subida exige permanente pressão. O cabo da caixa de comando é sustentado por um cabo ou corrente paralela. A talha é aterrada e mantém duas voltas de cabo no tambor.',
+            'c6aa6163-f73f-44a4-9556-dc6c586187aa'),
           {
             "id": "m2-comando", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1, "stepUnit": "Regra", "stepNext": "Próxima regra", "stepFinish": "Concluir", "kicker": "📄 Texto", "title": "Comando, cabo e aterramento",
             "items": [
@@ -143,7 +151,8 @@
           video('m2-v-fixacao', 'Requisitos da talha elétrica: capacidade, fixação e limites', '0:55',
             'Capacidade de carga, fixação por travas e manilhas, ganchos com trava, fim de curso, batente no trilho, tambor liso e boas condições de uso.',
             'Cinematográfico realista de equipamento, detalhe por detalhe; sem personagem, exceto a última cena.',
-            'A capacidade de carga fica no corpo da talha e no trilho. A talha é presa por travas ou manilhas e tem limite de fim de curso e batente no trilho.'),
+            'A capacidade de carga fica no corpo da talha e no trilho. A talha é presa por travas ou manilhas e tem limite de fim de curso e batente no trilho.',
+            '444e0103-cbc4-4fdf-9f92-b98c2808fff4'),
           {
             "id": "m2-fixacao-1", "type": "content", "layout": "lista-foto", "kicker": "📄 Texto", "title": "Capacidade, fixação e limites",
             "help": "Leia cada requisito e clique em Próxima regra para ver a foto. Na última, clique em Concluir.",
@@ -169,7 +178,8 @@
           video('m2-v-epis', 'EPIs do operador', '0:30',
             'O operador com os EPIs completos e cada EPI em destaque: capacete, protetor tipo concha, óculos, luvas e sapatos de segurança.',
             'Cinematográfico realista; EPIs em fundo branco limpo e uma cena do operador completo.',
-            'Antes de operar, use sempre os seus EPIs: capacete de segurança, protetor tipo concha, óculos de segurança, luvas de proteção e sapatos de segurança.'),
+            'Antes de operar, use sempre os seus EPIs: capacete de segurança, protetor tipo concha, óculos de segurança, luvas de proteção e sapatos de segurança.',
+            'a06f6f6b-dd3d-43f3-9d2c-792a6fc6a9dd'),
           {
             "id": "m2-epis", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "EPIs do operador",
             "groups": [{ "icon": "🦺", "label": "Use sempre os seus EPIs", "items": [
@@ -208,7 +218,8 @@
           video('m3-v-ato', 'Ato inseguro, condição insegura e o que fazer', '0:55',
             'Os conceitos de ato inseguro e condição insegura, a sequência até a lesão e os quatro comportamentos do "faça".',
             'Cartaz para os conceitos; Pixar 3D para os comportamentos; foto realista para a capacidade.',
-            'Ato inseguro, condição insegura e os dois juntos. Depois, o que fazer: inspecionar a talha antes de usar, usar a talha certa para o peso certo, não deixar ninguém sob a carga e subir e descer a carga bem devagar.'),
+            'Ato inseguro, condição insegura e os dois juntos. Depois, o que fazer: inspecionar a talha antes de usar, usar a talha certa para o peso certo, não deixar ninguém sob a carga e subir e descer a carga bem devagar.',
+            'e680184a-24e1-4dcd-9cc1-c24f94156871'),
           {
             "id": "m3-ato", "type": "image", "layout": "destaque", "title": "",
             "image": F + 'p15.png', "imageAlt": "Ato inseguro, condição insegura e os dois juntos: um trabalhador em cima de uma cadeira, um piso molhado com fio solto e uma trabalhadora distraída perto da poça",
@@ -240,7 +251,8 @@
           video('m3-v-incorreto', 'Uso incorreto e sobrecarga', '1:00',
             'Trancos, balanços e pancadas, uso incorreto de lingas, gancho, ângulo de subida e correntes, e as formas de sobrecarregar a talha.',
             'Pixar 3D mostrando sempre o instante antes; uma cena de equipamento em foto realista.',
-            'Não sobrecarregue a talha com trancos, balanços e pancadas. Use as lingas corretamente, atenção ao ângulo de subida e às correntes emaranhadas. Se precisar de dois, está com sobrecarga.'),
+            'Não sobrecarregue a talha com trancos, balanços e pancadas. Use as lingas corretamente, atenção ao ângulo de subida e às correntes emaranhadas. Se precisar de dois, está com sobrecarga.',
+            'd4f11763-e87b-415f-bbdc-f5cf82c05350'),
           {
             "id": "m3-incorreto", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "Não use incorretamente",
             "groups": [{ "icon": "🚫", "label": "Quatro cuidados com a talha", "items": [
@@ -267,7 +279,8 @@
           video('m3-v-foco', 'Foco no trabalho e carona na carga', '0:40',
             'Distração perto da talha, o aviso "Proibido perder o foco", o devaneio e a carona na carga.',
             'Pixar 3D mostrando sempre o instante antes; cartaz para o aviso.',
-            'Não brinque nem se distraia quando trabalhar com talhas e pontes rolantes. Proibido perder o foco. Evite sonhar acordado e nunca pegue carona com a carga.'),
+            'Não brinque nem se distraia quando trabalhar com talhas e pontes rolantes. Proibido perder o foco. Evite sonhar acordado e nunca pegue carona com a carga.',
+            '8fd048c4-e72d-4627-974e-0a39d530ac39'),
           {
             "id": "m3-foco", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1.5, "stepUnit": "Aviso", "stepNext": "Próximo aviso", "stepFinish": "Concluir",
             "kicker": "📄 Texto", "title": "Foco no trabalho",
@@ -307,7 +320,8 @@
           video('m4-v-corrente', 'Inspeção da corrente', '0:50',
             'Inspeção em correntes e ganchos: sinais de uso e deformação, corrente torcida, empenada e os sinais de perigo.',
             'Cinematográfico realista em detalhe; Pixar 3D na abertura; cartaz para os sinais de perigo.',
-            'Procure sinais de uso e deformação: a corrente pode estar torcida ou empenada. Fique atento aos sinais anormais e perigosos: fissura, entalhamento e elo alongado.'),
+            'Procure sinais de uso e deformação: a corrente pode estar torcida ou empenada. Fique atento aos sinais anormais e perigosos: fissura, entalhamento e elo alongado.',
+            'f42b5041-edf2-466c-9374-9e7d92c52baa'),
           {
             "id": "m4-corrente", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "Sinais na corrente",
             "help": "Clique aqui em cima: primeiro em “Uso e deformação” e depois em “Anormais e perigosos”, para ver todos os sinais.",
@@ -327,7 +341,8 @@
           video('m4-v-gancho', 'Uso e inspeção do gancho', '0:40',
             'O gancho com trava de segurança, o uso incorreto e o correto, o desgaste central, o alongamento e o limite de 15 %.',
             'Cinematográfico realista; cartaz para o uso do gancho e para o limite de 15 %.',
-            'Confira o uso do gancho: incorreto e correto. Na inspeção, observe o desgaste central e o alongamento. Até 15 % de alargamento do gancho é aceitável.'),
+            'Confira o uso do gancho: incorreto e correto. Na inspeção, observe o desgaste central e o alongamento. Até 15 % de alargamento do gancho é aceitável.',
+            '6eeafcc4-8627-422c-9e36-a1354cb30f93'),
           {
             "id": "m4-gancho", "type": "content", "layout": "quickcards", "qcStyle": "checklist", "kicker": "📄 Texto", "title": "Uso e inspeção do gancho",
             "items": [
@@ -355,7 +370,8 @@
           video('m5-v-bigbag', 'Içamento de Big Bag', '0:45',
             'O Big Bag ancorado no balancim, o ajuste e a integridade das alças e o cuidado no manuseio.',
             'Cinematográfico realista; Pixar 3D para a inspeção das alças.',
-            'A operação com talha é destinada ao içamento de Big Bag. Os Big Bags são ancorados nos balancins. Observe o perfeito ajuste das alças.'),
+            'A operação com talha é destinada ao içamento de Big Bag. Os Big Bags são ancorados nos balancins. Observe o perfeito ajuste das alças.',
+            'b39220ba-f96d-4c55-b333-eda841be4800'),
           {
             "id": "m5-bigbag", "type": "content", "layout": "duo", "kicker": "📄 Texto", "title": "Big Bag e balancim",
             "cards": [
@@ -370,7 +386,8 @@
           video('m5-v-passos', 'Passos da operação e o percurso da manobra', '1:00',
             'Ambientar-se, controles direcionais, características da talha, o percurso da manobra e o fechamento "Pense antes de agir".',
             'Pixar 3D para o passo a passo; foto realista para os controles e a talha; cartaz para o fechamento.',
-            'Ambiente-se, verifique os controles direcionais e observe as características da talha. Reflita sobre o percurso, sem obstáculos de enrosco, observe as pessoas por perto e mantenha o foco. Pense antes de agir.'),
+            'Ambiente-se, verifique os controles direcionais e observe as características da talha. Reflita sobre o percurso, sem obstáculos de enrosco, observe as pessoas por perto e mantenha o foco. Pense antes de agir.',
+            '7a198ff7-720c-48be-92a1-20d873fa6c1e'),
           {
             "id": "m5-passos", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1.5, "stepUnit": "Passo", "stepNext": "Próximo passo", "stepFinish": "Concluir",
             "kicker": "📄 Texto", "title": "Passos a serem seguidos",
