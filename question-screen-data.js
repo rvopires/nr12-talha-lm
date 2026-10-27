@@ -49,7 +49,7 @@
   }
   /* duelo: sim ou não, sem foto */
   function duelo(id, question, sim, explanation, review, k) {
-    return { id: id, type: 'question', question: question, image: k ? F + 'm5d' + k + '.png' : undefined, imageAlt: review,
+    return { id: id, type: 'question', question: question, image: k ? F + 'm5d' + k + '.png?v=fab1' : undefined, imageAlt: review,
       alternatives: [{ id: 'a', text: 'Sim', correct: sim }, { id: 'b', text: 'Não', correct: !sim }],
       explanation: explanation, review: review, transcript: question, variant: 'confirmar', confirm: true };
   }
