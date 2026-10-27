@@ -18,7 +18,7 @@
   pal.className = 'qs-fx-pal';
   pal.alt = '';
   pal.draggable = false;
-  pal.src = 'assets/fotos/capa-palete.png';
+  pal.src = 'assets/fotos/capa-palete.png?v=6';
   pal.onerror = function () { pal.style.display = 'none'; };
   clip.appendChild(pal);
   layer.appendChild(clip);

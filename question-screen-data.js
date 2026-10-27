@@ -23,7 +23,7 @@
 
   function cover(m, title, subtitle) {
     return { id: 'm' + m + '-cover', type: 'cover', title: 'Módulo ' + m + ' — ' + title, subtitle: subtitle,
-      transcript: 'Módulo ' + m + ': ' + title + '.', image: F + 'capamodulo' + m + '.png', imageAlt: 'Capa do Módulo ' + m + ': ' + title };
+      transcript: 'Módulo ' + m + ': ' + title + '.', image: F + 'capamodulo' + m + '.png?v=fab1', imageAlt: 'Capa do Módulo ' + m + ': ' + title };
   }
   function video(id, title, dur, scene, brief, body, pandaId) {
     var out = { id: id, type: 'video', kicker: '🎥 Vídeo', title: title, duration: dur, scene: scene, brief: brief, body: body,
@@ -45,7 +45,7 @@
     return { id: id, type: 'question', question: question,
       alternatives: alts.map(function (t, i) { return { id: 'abc'.charAt(i), text: t, correct: i === ok }; }),
       explanation: explanation, review: review, transcript: question,
-      image: F + 'm' + mod + 'p' + k + '.png', imageAlt: imageAlt, variant: 'cartoes', confirm: true };
+      image: F + 'm' + mod + 'p' + k + '.png?v=fab1', imageAlt: imageAlt, variant: 'cartoes', confirm: true };
   }
   /* duelo: sim ou não, sem foto */
   function duelo(id, question, sim, explanation, review, k) {
@@ -77,28 +77,28 @@
             "id": "m1-referencias-nrs", "type": "content", "layout": "acordeao", "startAt": 1, "nextLabel": "Próxima norma", "kicker": "📄 Texto", "title": "Referências normativas: as NRs",
             "help": "Toque numa faixa colorida, ou em Próxima norma, para abrir cada norma. Na última, clique em Concluir.",
             "groups": [{ "icon": "📚", "label": "As 5 NRs citadas no treinamento", "items": [
-              { "icon": "🦺", "tone": "blue", "title": "NR 06", "text": "Equipamento de Proteção Individual – EPI.", "image": F + 'p2.1.png', "imageAlt": "EPIs organizados sobre uma bancada" },
-              { "icon": "📦", "tone": "orange", "title": "NR 11", "text": "Transporte, Movimentação, Armazenagem e Manuseio de Materiais.", "image": F + 'p2.2.png', "imageAlt": "Talha elétrica içando um palete" },
-              { "icon": "⚙️", "tone": "purple", "title": "NR 12", "text": "Segurança no Trabalho em Máquinas e Equipamentos.", "image": F + 'p2.3.png', "imageAlt": "Esteira com proteção fixa" },
-              { "icon": "🧍", "tone": "teal", "title": "NR 17", "text": "Ergonomia.", "image": F + 'p2.4.png', "imageAlt": "Colaborador com postura ereta ao lado da talha" },
-              { "icon": "🪜", "tone": "pink", "title": "NR 35", "text": "Trabalho em Altura.", "image": F + 'p2.5.png', "imageAlt": "Estantes altas de aço vistas de baixo" }
+              { "icon": "🦺", "tone": "blue", "title": "NR 06", "text": "Equipamento de Proteção Individual – EPI.", "image": F + 'p2.1.png?v=fab1', "imageAlt": "EPIs organizados sobre uma bancada" },
+              { "icon": "📦", "tone": "orange", "title": "NR 11", "text": "Transporte, Movimentação, Armazenagem e Manuseio de Materiais.", "image": F + 'p2.2.png?v=fab1', "imageAlt": "Talha elétrica içando um palete" },
+              { "icon": "⚙️", "tone": "purple", "title": "NR 12", "text": "Segurança no Trabalho em Máquinas e Equipamentos.", "image": F + 'p2.3.png?v=fab1', "imageAlt": "Esteira com proteção fixa" },
+              { "icon": "🧍", "tone": "teal", "title": "NR 17", "text": "Ergonomia.", "image": F + 'p2.4.png?v=fab1', "imageAlt": "Colaborador com postura ereta ao lado da talha" },
+              { "icon": "🪜", "tone": "pink", "title": "NR 35", "text": "Trabalho em Altura.", "image": F + 'p2.5.png?v=fab1', "imageAlt": "Estantes altas de aço vistas de baixo" }
             ] }],
             "transcript": "Referências normativas: NR 06, Equipamento de Proteção Individual. NR 11, Transporte, Movimentação, Armazenagem e Manuseio de Materiais. NR 12, Segurança no Trabalho em Máquinas e Equipamentos. NR 17, Ergonomia. NR 35, Trabalho em Altura."
           },
           {
             "id": "m1-referencias-abnt", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "Referências normativas: ABNT e outras",
             "groups": [{ "icon": "📑", "label": "Mais referências", "items": [
-              { "icon": "📑", "tone": "blue", "title": "ABNT NBR", "text": "NBR 10981 – Especificação. NBR 11095 – Método de ensaio. NBR 11327 – Requisitos de utilização. NBR 16324 – Talhas com acionamento manual.", "image": F + 'p2.6.png', "imageAlt": "Talha elétrica e talha manual de corrente lado a lado" },
-              { "icon": "❤️", "tone": "orange", "title": "American Heart Association", "text": "Protocolo 2015 Guidelines American Heart Association.", "image": F + 'p2.7.png', "imageAlt": "Estojo de primeiros socorros aberto" },
-              { "icon": "🚑", "tone": "teal", "title": "Portaria GM N.2048", "text": "Política Nacional de Atenção as Urgências.", "image": F + 'p2.8.png', "imageAlt": "Ambulância de resgate" }
+              { "icon": "📑", "tone": "blue", "title": "ABNT NBR", "text": "NBR 10981 – Especificação. NBR 11095 – Método de ensaio. NBR 11327 – Requisitos de utilização. NBR 16324 – Talhas com acionamento manual.", "image": F + 'p2.6.png?v=fab1', "imageAlt": "Talha elétrica e talha manual de corrente lado a lado" },
+              { "icon": "❤️", "tone": "orange", "title": "American Heart Association", "text": "Protocolo 2015 Guidelines American Heart Association.", "image": F + 'p2.7.png?v=fab1', "imageAlt": "Estojo de primeiros socorros aberto" },
+              { "icon": "🚑", "tone": "teal", "title": "Portaria GM N.2048", "text": "Política Nacional de Atenção as Urgências.", "image": F + 'p2.8.png?v=fab1', "imageAlt": "Ambulância de resgate" }
             ] }],
             "transcript": "Também são referências: as normas ABNT NBR 10981, 11095, 11327 e 16324, sobre talhas de corrente; o Protocolo 2015 Guidelines American Heart Association; e a Portaria GM 2048, Política Nacional de Atenção às Urgências."
           },
           {
             "id": "m1-porque", "type": "content", "layout": "duo", "kicker": "📄 Texto", "title": "Por que existe a NR 11 e o checklist",
             "cards": [
-              { "icon": "📜", "thumbs": [F + 'p3.1.png'], "lead": "A NR 11", "title": "Nasceu para a segurança", "body": "Implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais." },
-              { "icon": "✅", "thumbs": [F + 'p3.2.png'], "lead": "O checklist", "title": "Ferramenta de apoio", "body": "Ótima ferramenta para atividades de longa duração." }
+              { "icon": "📜", "thumbs": [F + 'p3.1.png?v=fab1'], "lead": "A NR 11", "title": "Nasceu para a segurança", "body": "Implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais." },
+              { "icon": "✅", "thumbs": [F + 'p3.2.png?v=fab1'], "lead": "O checklist", "title": "Ferramenta de apoio", "body": "Ótima ferramenta para atividades de longa duração." }
             ],
             "items": [
               { "icon": "⚠️", "title": "Por que os acidentes eram frequentes", "text": "Devido à crescente mecanização industrial e à grande necessidade de movimentações mais eficientes nos ambientes de trabalho." }
@@ -141,10 +141,10 @@
           {
             "id": "m2-comando", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1, "stepUnit": "Regra", "stepNext": "Próxima regra", "stepFinish": "Concluir", "kicker": "📄 Texto", "title": "Comando, cabo e aterramento",
             "items": [
-              { "image": F + 'p8.1.png', "imageAlt": "Botoeira com o polegar pressionando um botão", "icon": "🔘", "title": "Botão de subida", "text": "Deve exigir permanente pressão para levantar ou abaixar a carga." },
-              { "image": F + 'p8.2.png', "imageAlt": "Cabo da botoeira sustentado por corrente paralela", "icon": "🔌", "title": "Cabo da caixa de comando", "text": "Deve ser sustentado por um cabo ou corrente paralela, que o protege de esforços e danificações." },
-              { "image": F + 'p8.3.png', "imageAlt": "Corpo da talha com cabo de aterramento", "icon": "⚡", "title": "Aterramento", "text": "A talha deve ser aterrada, para evitar choque elétrico no operador em caso de falha do circuito." },
-              { "image": F + 'p8.4.png', "imageAlt": "Tambor da talha com voltas de cabo de aço", "icon": "🧵", "title": "Duas voltas de cabo", "text": "Um mínimo de duas voltas de cabo deve permanecer no tambor quando o bloco do gancho estiver no piso mais baixo do edifício onde a talha opera." }
+              { "image": F + 'p8.1.png?v=fab1', "imageAlt": "Botoeira com o polegar pressionando um botão", "icon": "🔘", "title": "Botão de subida", "text": "Deve exigir permanente pressão para levantar ou abaixar a carga." },
+              { "image": F + 'p8.2.png?v=fab1', "imageAlt": "Cabo da botoeira sustentado por corrente paralela", "icon": "🔌", "title": "Cabo da caixa de comando", "text": "Deve ser sustentado por um cabo ou corrente paralela, que o protege de esforços e danificações." },
+              { "image": F + 'p8.3.png?v=fab1', "imageAlt": "Corpo da talha com cabo de aterramento", "icon": "⚡", "title": "Aterramento", "text": "A talha deve ser aterrada, para evitar choque elétrico no operador em caso de falha do circuito." },
+              { "image": F + 'p8.4.png?v=fab1', "imageAlt": "Tambor da talha com voltas de cabo de aço", "icon": "🧵", "title": "Duas voltas de cabo", "text": "Um mínimo de duas voltas de cabo deve permanecer no tambor quando o bloco do gancho estiver no piso mais baixo do edifício onde a talha opera." }
             ],
             "transcript": "Comando, cabo e aterramento. O botão de subida deve exigir permanente pressão para levantar ou abaixar a carga. O cabo elétrico da caixa de comando deve ser sustentado por um cabo ou corrente paralela. A talha deve ser aterrada, para evitar choque elétrico no operador em caso de falha do circuito. Um mínimo de duas voltas de cabo deve permanecer no tambor quando o bloco do gancho estiver no piso mais baixo do edifício onde a talha opera."
           },
@@ -241,10 +241,10 @@
           {
             "id": "m3-faca", "type": "content", "layout": "quickcards", "qcStyle": "checklist", "kicker": "📄 Texto", "title": "O que fazer",
             "items": [
-              { "icon": "🔍", "title": "Inspecione antes de usar", "text": "Sempre inspecione as talhas antes de usar.", "image": F + 'p17.1.png', "imageAlt": "Operador com uma lupa examinando a corrente da talha" },
-              { "icon": "⚖️", "title": "Talha certa para o peso certo", "text": "Verificação de capacidade de içamento suportada.", "image": F + 'p17.2.png', "imageAlt": "Operador olhando a placa de capacidade da talha" },
-              { "icon": "🚷", "title": "Ninguém sob a carga", "text": "Assegure-se de que não haja ninguém sob a carga.", "image": F + 'p17.3.png', "imageAlt": "Operador conferindo que o espaço sob a carga está livre" },
-              { "icon": "🐢", "title": "Suba e desça devagar", "text": "Suba e desça a carga bem devagar.", "image": F + 'p17.4.png', "imageAlt": "Operador elevando devagar uma carga" }
+              { "icon": "🔍", "title": "Inspecione antes de usar", "text": "Sempre inspecione as talhas antes de usar.", "image": F + 'p17.1.png?v=fab1', "imageAlt": "Operador com uma lupa examinando a corrente da talha" },
+              { "icon": "⚖️", "title": "Talha certa para o peso certo", "text": "Verificação de capacidade de içamento suportada.", "image": F + 'p17.2.png?v=fab1', "imageAlt": "Operador olhando a placa de capacidade da talha" },
+              { "icon": "🚷", "title": "Ninguém sob a carga", "text": "Assegure-se de que não haja ninguém sob a carga.", "image": F + 'p17.3.png?v=fab1', "imageAlt": "Operador conferindo que o espaço sob a carga está livre" },
+              { "icon": "🐢", "title": "Suba e desça devagar", "text": "Suba e desça a carga bem devagar.", "image": F + 'p17.4.png?v=fab1', "imageAlt": "Operador elevando devagar uma carga" }
             ],
             "transcript": "O que fazer. Sempre inspecione as talhas antes de usar. Use a talha certa para o peso certo, verificando a capacidade de içamento suportada. Assegure-se de que não haja ninguém sob a carga. Suba e desça a carga bem devagar."
           },
@@ -256,10 +256,10 @@
           {
             "id": "m3-incorreto", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "Não use incorretamente",
             "groups": [{ "icon": "🚫", "label": "Quatro cuidados com a talha", "items": [
-              { "icon": "🪢", "tone": "blue", "title": "Use slings (lingas) corretamente", "text": "Use slings (lingas) corretamente.", "image": F + 'p18.1.png', "imageAlt": "Operadora ajustando as lingas em um palete de sacos" },
-              { "icon": "🪝", "tone": "orange", "title": "Não use o gancho para levantar a carga", "text": "Não use o gancho para levantar a carga.", "image": F + 'p18.2.png', "imageAlt": "Operador hesitante diante da carga e do gancho" },
-              { "icon": "📐", "tone": "teal", "title": "Ângulo de subida", "text": "Atenção ao ângulo de subida.", "image": F + 'p18.3.png', "imageAlt": "Palete pendurado em uma corrente inclinada" },
-              { "icon": "🌀", "tone": "purple", "title": "Correntes emaranhadas", "text": "Não use a talha com correntes emaranhadas.", "image": F + 'p18.4.png', "imageAlt": "Corrente da talha emaranhada e torcida" }
+              { "icon": "🪢", "tone": "blue", "title": "Use slings (lingas) corretamente", "text": "Use slings (lingas) corretamente.", "image": F + 'p18.1.png?v=fab1', "imageAlt": "Operadora ajustando as lingas em um palete de sacos" },
+              { "icon": "🪝", "tone": "orange", "title": "Não use o gancho para levantar a carga", "text": "Não use o gancho para levantar a carga.", "image": F + 'p18.2.png?v=fab1', "imageAlt": "Operador hesitante diante da carga e do gancho" },
+              { "icon": "📐", "tone": "teal", "title": "Ângulo de subida", "text": "Atenção ao ângulo de subida.", "image": F + 'p18.3.png?v=fab1', "imageAlt": "Palete pendurado em uma corrente inclinada" },
+              { "icon": "🌀", "tone": "purple", "title": "Correntes emaranhadas", "text": "Não use a talha com correntes emaranhadas.", "image": F + 'p18.4.png?v=fab1', "imageAlt": "Corrente da talha emaranhada e torcida" }
             ] }],
             "transcript": "Não use incorretamente. Use slings, as lingas, corretamente. Não use o gancho para levantar a carga. Atenção ao ângulo de subida. Não use a talha com as correntes emaranhadas."
           },
@@ -267,12 +267,12 @@
             "id": "m3-sobrecarga", "type": "content", "layout": "lista-foto", "kicker": "📄 Texto", "title": "Não sobrecarregue a talha",
             "help": "Leia cada situação e clique em Próxima regra para ver a foto. Na última, clique em Concluir.",
             "groups": [{ "icon": "⚠️", "label": "Formas de sobrecarregar a talha", "items": [
-              { "icon": "💢", "tone": "orange", "title": "Trancos", "text": "Não sobrecarregue a talha com trancos.", "image": F + 'p19.1.png', "imageAlt": "Operador com a carga dando um puxão" },
-              { "icon": "↔️", "tone": "blue", "title": "Balanços", "text": "Não sobrecarregue a talha com balanços.", "image": F + 'p19.2.png', "imageAlt": "Carga balançando de lado" },
-              { "icon": "🔨", "tone": "teal", "title": "Pancadas", "text": "Não sobrecarregue a talha com pancadas.", "image": F + 'p19.3.png', "imageAlt": "Palete encostando em uma coluna do galpão" },
-              { "icon": "🔧", "tone": "purple", "title": "Forçar os componentes", "text": "Não force os componentes da talha.", "image": F + 'p19.4.png', "imageAlt": "Operador forçando o corpo da talha" },
-              { "icon": "😮‍💨", "tone": "pink", "title": "Esforço excessivo", "text": "Evite esforço excessivo do operador.", "image": F + 'p19.5.png', "imageAlt": "Operador puxando a corrente com esforço visível" },
-              { "icon": "👥", "tone": "gold", "title": "Se precisar de dois", "text": "Se precisar de dois, está com sobrecarga.", "image": F + 'p19.6.png', "imageAlt": "Dois operadores puxando a mesma corrente" }
+              { "icon": "💢", "tone": "orange", "title": "Trancos", "text": "Não sobrecarregue a talha com trancos.", "image": F + 'p19.1.png?v=fab1', "imageAlt": "Operador com a carga dando um puxão" },
+              { "icon": "↔️", "tone": "blue", "title": "Balanços", "text": "Não sobrecarregue a talha com balanços.", "image": F + 'p19.2.png?v=fab1', "imageAlt": "Carga balançando de lado" },
+              { "icon": "🔨", "tone": "teal", "title": "Pancadas", "text": "Não sobrecarregue a talha com pancadas.", "image": F + 'p19.3.png?v=fab1', "imageAlt": "Palete encostando em uma coluna do galpão" },
+              { "icon": "🔧", "tone": "purple", "title": "Forçar os componentes", "text": "Não force os componentes da talha.", "image": F + 'p19.4.png?v=fab1', "imageAlt": "Operador forçando o corpo da talha" },
+              { "icon": "😮‍💨", "tone": "pink", "title": "Esforço excessivo", "text": "Evite esforço excessivo do operador.", "image": F + 'p19.5.png?v=fab1', "imageAlt": "Operador puxando a corrente com esforço visível" },
+              { "icon": "👥", "tone": "gold", "title": "Se precisar de dois", "text": "Se precisar de dois, está com sobrecarga.", "image": F + 'p19.6.png?v=fab1', "imageAlt": "Dois operadores puxando a mesma corrente" }
             ] }],
             "transcript": "Não sobrecarregue a talha. Evite trancos, balanços e pancadas. Não force os componentes da talha. Evite esforço excessivo do operador. Se precisar de dois, está com sobrecarga."
           },
@@ -285,9 +285,9 @@
             "id": "m3-foco", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1.5, "stepUnit": "Aviso", "stepNext": "Próximo aviso", "stepFinish": "Concluir",
             "kicker": "📄 Texto", "title": "Foco no trabalho",
             "items": [
-              { "image": F + 'p20.1.png', "icon": "🎯", "title": "Não brinque nem se distraia", "text": "Quando trabalhar com talhas e pontes rolantes. Proibido perder o foco." },
-              { "image": F + 'p20.2.png', "icon": "🚫", "title": "Não pegue carona com a carga", "text": "Nunca suba na carga." },
-              { "image": F + 'p20.3.png', "icon": "💭", "title": "Evite sonhar acordado", "text": "Durante o trabalho, mantenha a atenção na operação." }
+              { "image": F + 'p20.1.png?v=fab1', "icon": "🎯", "title": "Não brinque nem se distraia", "text": "Quando trabalhar com talhas e pontes rolantes. Proibido perder o foco." },
+              { "image": F + 'p20.2.png?v=fab1', "icon": "🚫", "title": "Não pegue carona com a carga", "text": "Nunca suba na carga." },
+              { "image": F + 'p20.3.png?v=fab1', "icon": "💭", "title": "Evite sonhar acordado", "text": "Durante o trabalho, mantenha a atenção na operação." }
             ],
             "transcript": "Foco no trabalho. Não brinque nem se distraia quando trabalhar com talhas e pontes rolantes. Não pegue carona com a carga. Evite sonhar acordado durante o trabalho."
           },
@@ -375,8 +375,8 @@
           {
             "id": "m5-bigbag", "type": "content", "layout": "duo", "kicker": "📄 Texto", "title": "Big Bag e balancim",
             "cards": [
-              { "icon": "📦", "thumbs": [F + 'p29.1.png'], "lead": "Ancoragem", "title": "Ancorado no balancim", "body": "Os Big Bags são ancorados nos balancins." },
-              { "icon": "🔗", "thumbs": [F + 'p29.2.png'], "lead": "Alças", "title": "Perfeito ajuste das alças", "body": "Observar o perfeito ajuste das alças." }
+              { "icon": "📦", "thumbs": [F + 'p29.1.png?v=fab1'], "lead": "Ancoragem", "title": "Ancorado no balancim", "body": "Os Big Bags são ancorados nos balancins." },
+              { "icon": "🔗", "thumbs": [F + 'p29.2.png?v=fab1'], "lead": "Alças", "title": "Perfeito ajuste das alças", "body": "Observar o perfeito ajuste das alças." }
             ],
             "items": [
               { "icon": "⚠️", "title": "Integridade das alças", "text": "A constatação de integridade das alças é de suma importância." }
@@ -392,19 +392,19 @@
             "id": "m5-passos", "type": "content", "steps": true, "stepSkin": "equip", "stepLayout": "lado", "stepRatio": 1.5, "stepUnit": "Passo", "stepNext": "Próximo passo", "stepFinish": "Concluir",
             "kicker": "📄 Texto", "title": "Passos a serem seguidos",
             "items": [
-              { "image": F + 'p30.1.png', "icon": "👀", "title": "Ambientar-se", "text": "Ambiente-se no local de trabalho." },
-              { "image": F + 'p30.2.png', "icon": "🎛️", "title": "Controles direcionais", "text": "Verificar os controles direcionais da talha." },
-              { "image": F + 'p30.3.png', "icon": "⛓️", "title": "Características", "text": "Observar as características da talha." }
+              { "image": F + 'p30.1.png?v=fab1', "icon": "👀", "title": "Ambientar-se", "text": "Ambiente-se no local de trabalho." },
+              { "image": F + 'p30.2.png?v=fab1', "icon": "🎛️", "title": "Controles direcionais", "text": "Verificar os controles direcionais da talha." },
+              { "image": F + 'p30.3.png?v=fab1', "icon": "⛓️", "title": "Características", "text": "Observar as características da talha." }
             ],
             "transcript": "Passos a serem seguidos: ambiente-se no local de trabalho, verifique os controles direcionais da talha e observe as características da talha."
           },
           {
             "id": "m5-antes", "type": "content", "layout": "quickcards", "qcStyle": "checklist", "kicker": "📄 Texto", "title": "Antes de manobrar",
             "items": [
-              { "icon": "🛣️", "title": "Reflita sobre o percurso", "text": "Reflita sobre o percurso necessário para a manobra.", "image": F + 'p31.1.png', "imageAlt": "Operador olhando o trajeto livre à frente" },
-              { "icon": "🚧", "title": "Sem obstáculos de enrosco", "text": "Certifique-se que não haja obstáculos “enrosco”.", "image": F + 'p31.2.png', "imageAlt": "Operador conferindo o caminho da carga" },
-              { "icon": "👥", "title": "Proximidade de pessoas", "text": "Observe a proximidade de pessoas.", "image": F + 'p31.3.png', "imageAlt": "Operador atento a uma pessoa ao longe" },
-              { "icon": "🎯", "title": "Foco na operação", "text": "Foco na operação, sem distrações.", "image": F + 'p31.4.png', "imageAlt": "Operador concentrado na carga" }
+              { "icon": "🛣️", "title": "Reflita sobre o percurso", "text": "Reflita sobre o percurso necessário para a manobra.", "image": F + 'p31.1.png?v=fab1', "imageAlt": "Operador olhando o trajeto livre à frente" },
+              { "icon": "🚧", "title": "Sem obstáculos de enrosco", "text": "Certifique-se que não haja obstáculos “enrosco”.", "image": F + 'p31.2.png?v=fab1', "imageAlt": "Operador conferindo o caminho da carga" },
+              { "icon": "👥", "title": "Proximidade de pessoas", "text": "Observe a proximidade de pessoas.", "image": F + 'p31.3.png?v=fab1', "imageAlt": "Operador atento a uma pessoa ao longe" },
+              { "icon": "🎯", "title": "Foco na operação", "text": "Foco na operação, sem distrações.", "image": F + 'p31.4.png?v=fab1', "imageAlt": "Operador concentrado na carga" }
             ],
             "transcript": "Segurança com equipamentos de içar. Reflita sobre o percurso necessário para a manobra. Certifique-se de que não haja obstáculos. Observe a proximidade de pessoas. Foco na operação, sem distrações. Pense antes de agir."
           },

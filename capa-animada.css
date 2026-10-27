@@ -6,19 +6,19 @@
    Para desfazer: remova o <link> deste arquivo e o <script> capa-animada.js do sessao-aprender.html. */
 .qs-fx { position: absolute; pointer-events: none; overflow: hidden; --u: 1px; }
 /* faixa de recorte logo abaixo do corpo da talha (y ≥ 15,4 % da imagem): a corrente some "dentro" da talha */
-.qs-fx-clip { position: absolute; left: 0; width: 100%; top: 15.41%; height: 84.59%; overflow: hidden; }
+.qs-fx-clip { position: absolute; left: 0; width: 100%; top: 15.83%; height: 84.17%; overflow: hidden; }
 .qs-fx-pal {
   position: absolute; display: block; max-width: none; height: auto; user-select: none; -webkit-user-drag: none;
-  left: 56.2%; top: -6.53%; width: 17.94%;
+  left: 55.18%; top: -7.59%; width: 19.47%;
   animation: qsFxLift 6.5s ease-in-out infinite;
 }
 @keyframes qsFxLift {
   0%, 100% { transform: translateY(0); }
-  45%, 55% { transform: translateY(calc(var(--u) * -38)); }
+  45%, 55% { transform: translateY(calc(var(--u) * -30)); }
 }
 /* balão de fala: logo acima do capacete do instrutor (pés do balão a ~8 px da cabeça), com a ponta virada para ele */
 .qs-fx-say {
-  position: absolute; left: 84.6%; bottom: 59.6%; width: max-content; max-width: calc(var(--u) * 205);
+  position: absolute; left: 84.3%; bottom: 59.7%; width: max-content; max-width: calc(var(--u) * 205);
   padding: calc(var(--u) * 11) calc(var(--u) * 16);
   background: #fff; color: #17333f; border: calc(var(--u) * 3) solid #34af77; border-radius: calc(var(--u) * 20);
   font: 800 calc(var(--u) * 19)/1.25 "Montserrat", "Open Sans", sans-serif; text-align: center;
