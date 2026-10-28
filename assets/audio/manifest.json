@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:28:10.498Z",
+  "generatedAt": "2026-10-28T12:12:15.584Z",
   "items": {
     "m1-cover": {
       "file": "assets/audio/m1-cover.mp3",
@@ -11,15 +11,15 @@
     },
     "m1-referencias-nrs": {
       "file": "assets/audio/m1-referencias-nrs.mp3",
-      "text": "Referências normativas: as NRs."
+      "text": "Referências normativas: as NRs. As 5 NRs citadas no treinamento. NR 06: Equipamento de Proteção Individual – EPI. Na imagem: EPIs organizados sobre uma bancada. NR 11: Transporte, Movimentação, Armazenagem e Manuseio de Materiais. Na imagem: Talha elétrica içando um palete. NR 12: Segurança no Trabalho em Máquinas e Equipamentos. Na imagem: Esteira com proteção fixa. NR 17: Ergonomia. Na imagem: Colaborador com postura ereta ao lado da talha. NR 35: Trabalho em Altura. Na imagem: Estantes altas de aço vistas de baixo."
     },
     "m1-referencias-abnt": {
       "file": "assets/audio/m1-referencias-abnt.mp3",
-      "text": "Referências normativas: ABNT e outras."
+      "text": "Referências normativas: ABNT e outras. Mais referências. ABNT NBR: NBR 10981 – Especificação. NBR 11095 – Método de ensaio. NBR 11327 – Requisitos de utilização. NBR 16324 – Talhas com acionamento manual. Na imagem: Talha elétrica e talha manual de corrente lado a lado. American Heart Association: Protocolo 2015 Guidelines American Heart Association. Na imagem: Estojo de primeiros socorros aberto. Portaria GM N.2048: Política Nacional de Atenção as Urgências. Na imagem: Ambulância de resgate."
     },
     "m1-porque": {
       "file": "assets/audio/m1-porque.mp3",
-      "text": "Por que existe a NR 11 e o checklist. Nasceu para a segurança: Implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. Ferramenta de apoio: Ótima ferramenta para atividades de longa duração. Por que os acidentes eram frequentes: Devido à crescente mecanização industrial e à grande necessidade de movimentações mais eficientes nos ambientes de trabalho."
+      "text": "Por que existe a NR 11 e o checklist. A NR 11. Nasceu para a segurança: Implementar ações de segurança nos ambientes e nos equipamentos de içamento e transporte de materiais. O checklist. Ferramenta de apoio: Ótima ferramenta para atividades de longa duração. Por que os acidentes eram frequentes: Devido à crescente mecanização industrial e à grande necessidade de movimentações mais eficientes nos ambientes de trabalho."
     },
     "m1-quiz-intro": {
       "file": "assets/audio/m1-quiz-intro.mp3",
@@ -127,11 +127,11 @@
     },
     "m2-fixacao-1": {
       "file": "assets/audio/m2-fixacao-1.mp3",
-      "text": "Capacidade, fixação e limites."
+      "text": "Capacidade, fixação e limites. Requisitos da talha. Capacidade de carga: Deve estar claramente posicionada no corpo da talha; o trilho também deve ter assinalada sua capacidade de carga. Na imagem: Talha com placa de capacidade no corpo e no trilho. Presas aos suportes: As talhas devem estar seguramente presas aos seus suportes por travas ou manilhas. Na imagem: Manilha de aço prendendo a talha ao suporte. Ganchos com trava: Quando suspensas por ganchos, estes devem ter trava que não permita o escape da talha. Na imagem: Gancho de suspensão com a trava fechada. Fim de curso: As talhas elétricas devem ter limite de fim de curso que não permita ao cabo de aço sobre-enrolar no tambor e romper-se. Na imagem: Tambor com o cabo de aço bem enrolado. Batente no trilho: Os trilhos devem ter batente de fim de curso para evitar a queda da talha. Na imagem: Ponta do trilho com batente de fim de curso."
     },
     "m2-fixacao-2": {
       "file": "assets/audio/m2-fixacao-2.mp3",
-      "text": "Tambor, condições de uso e cuidados."
+      "text": "Tambor, condições de uso e cuidados. Cuidados com a talha. Tambor sem projeções: O tambor com entalhe simples para acomodação do cabo deve ser livre de projeções que possam danificar o cabo. Na imagem: Tambor liso com o cabo assentado no entalhe. Boas condições de uso: Só utilizar talhas que apresentem cabos, correntes e componentes em adequadas condições de uso. Na imagem: Talha limpa e em bom estado. Mãos e dedos: Manter mãos e dedos distantes de pontos de pinçamento. Na imagem: Mãos enluvadas guiando a carga pela lateral. Sob cargas suspensas: Não permanecer sob cargas suspensas. Na imagem: Carga suspensa com o piso embaixo livre."
     },
     "m2-v-epis": {
       "file": "assets/audio/m2-v-epis.mp3",
@@ -139,7 +139,7 @@
     },
     "m2-epis": {
       "file": "assets/audio/m2-epis.mp3",
-      "text": "EPIs do operador."
+      "text": "EPIs do operador. Use sempre os seus EPIs. Capacete de segurança. Na imagem: Capacete de segurança amarelo. Protetor tipo concha. Na imagem: Protetor auricular tipo concha. Óculos de segurança. Na imagem: Óculos de segurança transparente. Luvas de proteção. Na imagem: Par de luvas de proteção. Sapatos de segurança. Na imagem: Par de botinas de segurança pretas."
     },
     "m2-quiz-intro": {
       "file": "assets/audio/m2-quiz-intro.mp3",
@@ -159,11 +159,11 @@
     },
     "m3-ato": {
       "file": "assets/audio/m3-ato.mp3",
-      "text": "Na imagem: Ato inseguro, condição insegura e os dois juntos: um trabalhador em cima de uma cadeira, um piso molhado com fio solto e uma trabalhadora distraída perto da poça."
+      "text": "São peças da sequência que leva ao acidente. Na imagem: Ato inseguro, condição insegura e os dois juntos: um trabalhador em cima de uma cadeira, um piso molhado com fio solto e uma trabalhadora distraída perto da poça."
     },
     "m3-sequencia": {
       "file": "assets/audio/m3-sequencia.mp3",
-      "text": "A sequência do acidente. Personalidade: Início da sequência. Falhas humanas: Vem depois da personalidade. Atos e condições inseguras: Vêm depois das falhas humanas. Acidente: Vem depois dos atos e condições inseguras. Lesão: Fim da sequência."
+      "text": "A sequência do acidente. Peça 1. Personalidade: Início da sequência. Peça 2. Falhas humanas: Vem depois da personalidade. Peça 3. Atos e condições inseguras: Vêm depois das falhas humanas. Peça 4. Acidente: Vem depois dos atos e condições inseguras. Peça 5. Lesão: Fim da sequência. Na imagem: Sequência de peças: personalidade, falhas humanas, atos e condições inseguras, acidente e lesão."
     },
     "m3-faca": {
       "file": "assets/audio/m3-faca.mp3",
@@ -175,11 +175,11 @@
     },
     "m3-incorreto": {
       "file": "assets/audio/m3-incorreto.mp3",
-      "text": "Não use incorretamente."
+      "text": "Não use incorretamente. Quatro cuidados com a talha. Use slings (lingas) corretamente. Na imagem: Operadora ajustando as lingas em um palete de sacos. Não use o gancho para levantar a carga. Na imagem: Operador hesitante diante da carga e do gancho. Ângulo de subida: Atenção ao ângulo de subida. Na imagem: Palete pendurado em uma corrente inclinada. Correntes emaranhadas: Não use a talha com correntes emaranhadas. Na imagem: Corrente da talha emaranhada e torcida."
     },
     "m3-sobrecarga": {
       "file": "assets/audio/m3-sobrecarga.mp3",
-      "text": "Não sobrecarregue a talha."
+      "text": "Não sobrecarregue a talha. Formas de sobrecarregar a talha. Trancos: Não sobrecarregue a talha com trancos. Na imagem: Operador com a carga dando um puxão. Balanços: Não sobrecarregue a talha com balanços. Na imagem: Carga balançando de lado. Pancadas: Não sobrecarregue a talha com pancadas. Na imagem: Palete encostando em uma coluna do galpão. Forçar os componentes: Não force os componentes da talha. Na imagem: Operador forçando o corpo da talha. Esforço excessivo: Evite esforço excessivo do operador. Na imagem: Operador puxando a corrente com esforço visível. Se precisar de dois: Se precisar de dois, está com sobrecarga. Na imagem: Dois operadores puxando a mesma corrente."
     },
     "m3-v-foco": {
       "file": "assets/audio/m3-v-foco.mp3",
@@ -199,7 +199,7 @@
     },
     "m4-cover": {
       "file": "assets/audio/m4-cover.mp3",
-      "text": "Módulo 4, Inspeção de corrente e gancho. Como inspecionar a corrente (sinais de uso, deformação e sinais de perigo) e o gancho (uso, desgaste central, alongamento e o limite de 15 %). Na imagem: Capa do Módulo 4: Inspeção de corrente e gancho."
+      "text": "Módulo 4, Inspeção de corrente e gancho. Como inspecionar a corrente (sinais de uso, deformação e sinais de perigo) e o gancho (uso, desgaste central, alongamento e o limite de 15 por cento). Na imagem: Capa do Módulo 4: Inspeção de corrente e gancho."
     },
     "m4-v-corrente": {
       "file": "assets/audio/m4-v-corrente.mp3",
@@ -207,7 +207,7 @@
     },
     "m4-corrente": {
       "file": "assets/audio/m4-corrente.mp3",
-      "text": "Sinais na corrente."
+      "text": "Sinais na corrente. Uso e deformação. Torcido: Sinal de uso e deformação. Na imagem: Elo de corrente torcido. Empenado: Sinal de uso e deformação. Na imagem: Elo de corrente empenado. Anormais e perigosos. Perigoso. Fissura: Sinal anormal e perigoso na corrente. Na imagem: Elo de corrente com rachadura fina. Perigoso. Entalhamento: Sinal anormal e perigoso na corrente. Na imagem: Elo de corrente com um corte marcado. Perigoso. Elo alongado: Sinal anormal e perigoso na corrente. Na imagem: Elo de corrente esticado."
     },
     "m4-v-gancho": {
       "file": "assets/audio/m4-v-gancho.mp3",
@@ -215,7 +215,7 @@
     },
     "m4-gancho": {
       "file": "assets/audio/m4-gancho.mp3",
-      "text": "Uso e inspeção do gancho. Uso do gancho: Observe a diferença entre o uso incorreto e o uso correto do gancho. Na imagem: Gancho de aço de talha com trava de segurança. Desgaste central: Na inspeção do gancho, observe o desgaste central. Na imagem: Gancho com marcas de desgaste na região central. Alongamento: Na inspeção do gancho, observe também o alongamento. Na imagem: Gancho com o bico esticado. Até 15 %: Até 15 % de alargamento do gancho é aceitável. Na imagem: Cartaz: até 15 % de alargamento do gancho é aceitável."
+      "text": "Uso e inspeção do gancho. Uso do gancho: Observe a diferença entre o uso incorreto e o uso correto do gancho. Na imagem: Gancho de aço de talha com trava de segurança. Desgaste central: Na inspeção do gancho, observe o desgaste central. Na imagem: Gancho com marcas de desgaste na região central. Alongamento: Na inspeção do gancho, observe também o alongamento. Na imagem: Gancho com o bico esticado. Até 15 por cento: Até 15 por cento de alargamento do gancho é aceitável. Na imagem: Cartaz: até 15 por cento de alargamento do gancho é aceitável."
     },
     "m4-quiz-intro": {
       "file": "assets/audio/m4-quiz-intro.mp3",
@@ -247,7 +247,7 @@
     },
     "m5-bigbag": {
       "file": "assets/audio/m5-bigbag.mp3",
-      "text": "Big Bag e balancim. Ancorado no balancim: Os Big Bags são ancorados nos balancins. Perfeito ajuste das alças: Observar o perfeito ajuste das alças. Integridade das alças: A constatação de integridade das alças é de suma importância."
+      "text": "Big Bag e balancim. Ancoragem. Ancorado no balancim: Os Big Bags são ancorados nos balancins. Alças. Perfeito ajuste das alças: Observar o perfeito ajuste das alças. Integridade das alças: A constatação de integridade das alças é de suma importância."
     },
     "m5-v-passos": {
       "file": "assets/audio/m5-v-passos.mp3",

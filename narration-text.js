@@ -57,6 +57,7 @@
       .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{20E3}]/gu, ' ')
       .replace(/(\d)\s*×/g, '$1 vezes')          // "3× cada"
       .replace(/(\S)\s*×\s*(\S)/g, '$1 ou $2')   // "certo × errado"
+      .replace(/(\d+(?:[.,]\d+)?)\s*%/g, '$1 por cento') // "15 %" → "15 por cento"
       .replace(/[•·▶✓✕×|]/g, ' ')
       .replace(/\s*—\s*/g, ', ')
       .replace(/\s+/g, ' ')
@@ -101,8 +102,52 @@
     return (l ? l + ': ' : '') + t;
   }
 
-  /* Blocos de conteúdo na mesma ordem em que o contentBlocks() os desenha:
-     corpo, números, cards, itens, comparação, tópicos, regras, citação, nota. */
+  // compara sem pontuação final: "Use slings." e "Use slings" são a mesma frase
+  function sameText(a, b) {
+    function norm(v) {
+      return clean(v).replace(/[.!?]+$/g, '').toLowerCase();
+    }
+    var x = norm(a);
+    var y = norm(b);
+    return !!(x && y && x === y);
+  }
+
+  /* Um card/item/entrada: título, lead, verso (text/body), pontos, tag e alt.
+     Lê frente e verso de uma vez — quem não enxerga não precisa virar o card. */
+  function entryParts(entry) {
+    var parts = [];
+    if (!entry || typeof entry !== 'object') {
+      if (entry) parts.push(sentence(entry));
+      return parts;
+    }
+
+    var tag = clean(entry.tag);
+    var lead = clean(entry.lead);
+    var title = clean(entry.title || entry.label);
+    var body = clean(stripHtml(entry.text || entry.body));
+
+    if (tag) parts.push(sentence(tag));
+    if (lead) parts.push(sentence(lead));
+
+    if (title && body && !sameText(title, body)) {
+      parts.push(labelled(title, body));
+    } else if (title) {
+      parts.push(sentence(title));
+    } else if (body) {
+      parts.push(sentence(body));
+    }
+
+    list(entry.points).forEach(function (p) {
+      parts.push(sentence(typeof p === 'object' ? (p.text || p.body || p.title) : p));
+    });
+
+    if (entry.imageAlt) parts.push('Na imagem: ' + clean(entry.imageAlt) + '.');
+    return parts;
+  }
+
+  /* Blocos de conteúdo na mesma ordem em que a tela mostra:
+     corpo, números, cards, grupos (acordeão/zonas/lista), itens (inclui verso
+     dos quickcards), comparação, tópicos, regras, citação, notas, banner. */
   function contentParts(screen) {
     var parts = [];
 
@@ -112,16 +157,20 @@
       parts.push(sentence(joinParts([clean(s.num), clean(s.label)])));
     });
     list(screen.cards).forEach(function (c) {
-      parts.push(labelled(c.title, c.body));
-      if (c.imageAlt) parts.push('Na imagem: ' + clean(c.imageAlt) + '.');
+      parts = parts.concat(entryParts(c));
+    });
+    // acordeão, zonas, lista-foto, flipz: cards moram em groups[].items
+    list(screen.groups).forEach(function (g) {
+      if (g && g.label) parts.push(sentence(g.label));
+      list(g && g.items).forEach(function (it) {
+        parts = parts.concat(entryParts(it));
+      });
     });
     list(screen.items).forEach(function (it) {
-      parts.push(labelled(it.title, it.text || it.body));
-      if (it.imageAlt) parts.push('Na imagem: ' + clean(it.imageAlt) + '.');
+      parts = parts.concat(entryParts(it));
     });
     list(screen.compare).forEach(function (c) {
-      parts.push(labelled(c.label, c.text || c.body));
-      if (c.imageAlt) parts.push('Na imagem: ' + clean(c.imageAlt) + '.');
+      parts = parts.concat(entryParts(c));
     });
     list(screen.bullets).forEach(function (b) {
       parts.push(sentence(b));
@@ -137,6 +186,13 @@
         ? labelled(screen.note.label, screen.note.text || screen.note.body)
         : sentence(screen.note));
     }
+    list(screen.notes).forEach(function (n) {
+      parts.push(typeof n === 'object'
+        ? sentence(n.text || n.body)
+        : sentence(n));
+    });
+
+    if (screen.bannerAlt) parts.push('Na imagem: ' + clean(screen.bannerAlt) + '.');
 
     return parts;
   }
